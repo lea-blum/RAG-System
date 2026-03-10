@@ -1,0 +1,221 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+body.app-root {
+  min-height: 100vh;
+  background: #f8fafc; /* רקע מקצועי בהיר */
+  color: #0f172a;
+}
+
+.app-header {
+  background: #1e3a8a; /* כחול נייבי */
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.app-header-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
+}
+
+.app-title {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.app-subtitle {
+  margin: 0.25rem 0 0;
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+.app-main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 2rem;
+}
+
+.page-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.page-title {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #1e3a8a; /* כחול נייבי לטקסט כותרת */
+}
+
+.page-text {
+  margin: 0;
+  color: #334155;
+}
+
+.page-card {
+  background: #ffffff;
+  border-radius: 0.75rem;
+  border: 1px solid #cbd5e1;
+  padding: 0.85rem 1rem;
+  box-shadow: 0 8px 16px rgba(15, 23, 42, 0.05);
+}
+
+.page-card-title {
+  margin: 0 0 0.35rem;
+  font-weight: 600;
+  color: #1e3a8a;
+}
+
+.page-card-text {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #475569;
+}
+
+
+/* Dashboard Styles */
+.dashboard-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.dashboard-section {
+  background: #ffffff;
+  border-radius: 0.75rem;
+  border: 1px solid #cbd5e1;
+  padding: 1.25rem;
+  box-shadow: 0 4px 12px rgba(30, 58, 138, 0.08);
+}
+
+.dashboard-section-title {
+  margin: 0 0 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1e3a8a;
+  border-bottom: 2px solid #3b82f6;
+  padding-bottom: 0.5rem;
+}
+
+.doctor-list,
+.appointment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.doctor-item,
+.appointment-item {
+  padding: 0.75rem;
+  background: #f8fafc;
+  border-radius: 0.5rem;
+  border: 1px solid #e2e8f0;
+  transition: all 0.2s ease;
+}
+
+.doctor-item:hover,
+.appointment-item:hover {
+  border-color: #3b82f6;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.15);
+}
+
+.doctor-name {
+  font-weight: 600;
+  color: #1e3a8a;
+  margin: 0 0 0.25rem;
+}
+
+.doctor-specialty {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin: 0 0 0.25rem;
+}
+
+.doctor-license {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  margin: 0;
+}
+
+/* Button Styles */
+.btn {
+  padding: 0.65rem 1.25rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.95rem;
+}
+
+.btn-primary {
+  background: #3b82f6;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background: #2563eb;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.btn-urgent {
+  background: #ef4444;
+  color: #ffffff;
+}
+
+.btn-urgent:hover {
+  background: #dc2626;
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+}
+
+.btn-container {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.priority-badge {
+  display: inline-block;
+  padding: 0.25rem 0.65rem;
+  border-radius: 0.35rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.priority-normal {
+  background: #e0f2fe;
+  color: #0369a1;
+}
+
+.priority-urgent {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.priority-emergency {
+  background: #fee2e2;
+  color: #dc2626;
+}

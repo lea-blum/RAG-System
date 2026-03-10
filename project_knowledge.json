@@ -1,0 +1,101 @@
+[
+    {
+        "title": "Frontend Framework",
+        "summary": "שימוש ב-Next.js גרסה 15.3 עם מבנה app router.",
+        "tags": [
+            "Frontend",
+            "Framework",
+            "UI"
+        ],
+        "date": null
+    },
+    {
+        "title": "Backend / Server Rendering Strategy",
+        "summary": "שימוש ביכולות ה-Fullstack של Next.js, כולל Server Components ו-API Routes (בהמשך).",
+        "tags": [
+            "Backend",
+            "Server Rendering",
+            "Fullstack",
+            "Next.js"
+        ],
+        "date": null
+    },
+    {
+        "title": "ORM and Data Access Layer",
+        "summary": "שימוש ב-Prisma ORM גרסה 7.4.1 לצורך דגם הנתונים ושכבת הגישה למסד הנתונים.",
+        "tags": [
+            "ORM",
+            "Data Access",
+            "Database"
+        ],
+        "date": null
+    },
+    {
+        "title": "Database Choice",
+        "summary": "בשלב זה נבחר SQLite כספק ברירת מחדל (דרך `prisma init --datasource-provider sqlite`) לצורך פיתוח מהיר וללא תלות בשרת חיצוני.",
+        "tags": [
+            "Database",
+            "Development",
+            "SQLite"
+        ],
+        "date": null
+    },
+    {
+        "title": "בחירת פריימוורק: Next.js",
+        "summary": "Next.js נבחר בשל שילובו הנוח בין צד השרת (Server) וצד הלקוח (Client), המאפשר התפתחות הדרגתית לפונקציונליות מתקדמת כמו API Routes ו-Middleware.",
+        "tags": [
+            "Frontend",
+            "Backend",
+            "Framework",
+            "Web Development"
+        ],
+        "date": null
+    },
+    {
+        "title": "בחירת ORM: Prisma",
+        "summary": "Prisma נבחרה בזכות יכולתה לספק מודל סכימה טיפוסי, תהליכי הגירה פשוטים ורמת Type Safety גבוהה בצד השרת.",
+        "tags": [
+            "ORM",
+            "Database",
+            "Backend",
+            "Type Safety"
+        ],
+        "date": null
+    },
+    {
+        "title": "בחירת מסד נתונים ראשוני: SQLite",
+        "summary": "SQLite נבחר לשלב ההתחלתי של המערכת, במיוחד עבור פיתוח מקומי, בשל התאמתו. צוין כי בעתיד קיימת אפשרות להחליף אותו לספק אחר (כגון PostgreSQL/MySQL) תוך התאמות מינימליות בסכימה ובהגדרות.",
+        "tags": [
+            "Database",
+            "SQLite",
+            "Local Development",
+            "Scalability",
+            "Future Proofing"
+        ],
+        "date": null
+    },
+    {
+        "title": "הגדרת מודולים חדשים במודל Prisma",
+        "summary": "כל מודול חדש במערכת (כגון תורים, רופאים, מטופלים) יוגדר תחילה במודל Prisma.",
+        "tags": [
+            "Prisma",
+            "מודולים",
+            "פיתוח",
+            "ORM",
+            "DB"
+        ],
+        "date": null
+    },
+    {
+        "title": "החלטה עתידית על סוג מסד נתונים לסביבת Production",
+        "summary": "בעת מעבר לסביבת Production, תתקבל החלטה חדשה לגבי סוג מסד הנתונים, ותתועד כהחלטה ארכיטקטונית נפרדת.",
+        "tags": [
+            "Production",
+            "מסד נתונים",
+            "DB",
+            "ארכיטקטורה",
+            "תכנון"
+        ],
+        "date": null
+    }
+]
