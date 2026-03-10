@@ -29,44 +29,45 @@
 * **Embeddings:** Cohere Multilingual v3.0.
 * **UI:** Gradio.
 
-🚀 הוראות הרצה
-1. התקנת סביבה
-יש להתקין את הספריות הנדרשות:
+## 🚀 הוראות הרצה
 
-Bash
-pip install llama-index llama-index-llms-gemini llama-index-embeddings-cohere pinecone-client 
+### 1. התקנת סביבה
+יש להתקין את הספריות הנדרשות באמצעות הטרמינל:
 
+bash
+pip install llama-index llama-index-llms-gemini llama-index-embeddings-cohere pinecone-client gradio python-dotenv urllib3
 
 
 
 gradio python-dotenv urllib3
-2. הגדרת משתני סביבה
-יש ליצור קובץ .env (ניתן להיעזר ב-.env.example) ולהזין את המפתחות הבאים:
+### 2. הגדרת משתני סביבה
+יש ליצור קובץ `.env` (ניתן להיעזר ב-`.env.example`) ולהזין את המפתחות הבאים:
 
-GOOGLE_API_KEY
+* `GOOGLE_API_KEY`
+* `COHERE_API_KEY`
+* `PINECONE_API_KEY`
+* `INDEX_NAME`
 
-COHERE_API_KEY
-
-PINECONE_API_KEY
-
-INDEX_NAME
-
-3. הכנת הנתונים (Ingestion)
+### 3. הכנת הנתונים (Ingestion)
 לפני הרצת הממשק, יש לוודא שקובץ ה-JSON נוצר והנתונים עלו ל-Vector DB:
 
-Bash
+bash
 python ingest_data.py
-4. הרצת המערכת
-Bash
+
+### 4. הרצת המערכת
+
+bash
 python app.py
-הממשק יהיה זמין בכתובת: http://127.0.0.1:7860
 
-❓ דוגמאות לשאלות שהסוכן יודע לענות
-שאלת נתונים מובנים: "אילו טכנולוגיות נבחרו לפרויקט ומה הגרסאות שלהן?"
+> הממשק יהיה זמין בכתובת: [http://127.0.0.1:7860](http://127.0.0.1:7860)
 
-שאלת חיפוש סמנטי: "מדוע הוחלט להשתמש ב-Prisma כ-ORM?"
+---
 
-שאלת סטטוס: "מהן האזהרות המרכזיות לגבי המעבר לסביבת Production?"
+### ❓ דוגמאות לשאלות שהסוכן יודע לענות
+
+* **שאלת נתונים מובנים:** "אילו טכנולוגיות נבחרו לפרויקט ומה הגרסאות שלהן?"
+* **שאלת חיפוש סמנטי:** "מדוע הוחלט להשתמש ב-Prisma כ-ORM?"
+* **שאלת סטטוס:** "מהן האזהרות המרכזיות לגבי המעבר לסביבת Production?"
 
 📊 תרשים זרימה של ה-Workflow
 Code snippet
