@@ -40,7 +40,10 @@ graph TD
     C --> E[Retrieval Event]
     D --> E
     E --> F[Synthesize Step]
-    F --> G[Final Answer with Source Label]```
+    F --> G[Final Answer with Source Label]
+
+
+
 🚀 הוראות הרצה
 1. התקנת סביבה
 יש להתקין את הספריות הנדרשות:
