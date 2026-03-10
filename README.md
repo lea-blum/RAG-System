@@ -30,20 +30,6 @@ Embeddings: Cohere Multilingual v3.0.
 
 UI: Gradio.
 
-📊 תרשים זרימה של ה-Workflow
-Code snippet
-```mermaid
-graph TD
-    A[User Input] --> B{Router Step}
-    B -->|Structured Query| C[JSON Query Engine]
-    B -->|Semantic Query| D[Pinecone Vector Store]
-    C --> E[Retrieval Event]
-    D --> E
-    E --> F[Synthesize Step]
-    F --> G[Final Answer with Source Label]
-
-
-
 🚀 הוראות הרצה
 1. התקנת סביבה
 יש להתקין את הספריות הנדרשות:
@@ -77,3 +63,18 @@ python app.py
 שאלת חיפוש סמנטי: "מדוע הוחלט להשתמש ב-Prisma כ-ORM?"
 
 שאלת סטטוס: "מהן האזהרות המרכזיות לגבי המעבר לסביבת Production?"
+
+📊 תרשים זרימה של ה-Workflow
+Code snippet
+```mermaid
+graph TD
+    A[User Input] --> B{Router Step}
+    B -->|Structured Query| C[JSON Query Engine]
+    B -->|Semantic Query| D[Pinecone Vector Store]
+    C --> E[Retrieval Event]
+    D --> E
+    E --> F[Synthesize Step]
+    F --> G[Final Answer with Source Label]
+
+
+
