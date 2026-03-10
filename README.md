@@ -1,45 +1,46 @@
-# 🚀 Kiro Smart Router RAG - Documentation Agent
+Kiro Smart Router RAG - Documentation Agent 🚀
+פרויקט זה מציג סוכן חכם (Agent) מבוסס LlamaIndex Workflows, שנועד לספק מענה טכני ואדמיניסטרטיבי על מערכת לניהול תורים למרפאה. המערכת משלבת ניתוב חכם (Routing) בין מקורות מידע שונים לקבלת תשובות מדויקות.
 
-פרויקט זה מציג סוכן חכם (**Agent**) מבוסס **LlamaIndex Workflows**, שנועד לספק מענה טכני ואדמיניסטרטיבי על מערכת לניהול תורים למרפאה. המערכת משלבת ניתוב חכם (Routing) בין מקורות מידע שונים לקבלת תשובות מדויקות.
-
----
-
-## 🏥 אודות המערכת המתועדת (Clinic Queue Management)
+🏥 אודות המערכת המתועדת (Clinic Queue Management)
 הסוכן מספק מידע על פרויקט Fullstack לניהול תורים, המבוסס על:
 
-* **Framework:** Next.js 15.3 (App Router).
-* **ORM:** Prisma 7.4.1.
-* **Database:** SQLite (Development).
-* **Language:** TypeScript.
+Framework: Next.js 15.3 (App Router).
 
----
+ORM: Prisma 7.4.1.
 
-## 🎯 מטרת הסוכן (The RAG System)
+Database: SQLite (Development).
+
+Language: TypeScript.
+
+🎯 מטרת הסוכן (The RAG System)
 המערכת מנתבת שאלות משתמש לשני ערוצים מרכזיים בהתאם לסוג השאלה:
 
-1.  **נתונים מובנים (Structured Data):** שליפה ישירה מקובץ `project_knowledge.json` עבור שאלות על גרסאות, רשימות טכנולוגיות והחלטות ספציפיות.
-2.  **חיפוש סמנטי (Semantic Search):** שליפה מתוך **Pinecone Vector DB** עבור שאלות עומק, הבנת רציונל וחיפוש בתיעוד הטקסטואלי הרחב.
+נתונים מובנים (Structured Data): שליפה ישירה מקובץ project_knowledge.json עבור שאלות על גרסאות, רשימות טכנולוגיות והחלטות ספציפיות.
 
----
+חיפוש סמנטי (Semantic Search): שליפה מתוך Pinecone Vector DB עבור שאלות עומק, הבנת רציונל וחיפוש בתיעוד הטקסטואלי הרחב.
 
-## 🛠 טכנולוגיות ה-AI
-* **LLM:** Google Gemini 2.5 Flash (עבודה במצב REST לעקיפת חסימות SSL).
-* **Orchestration:** LlamaIndex Workflows (Event-Driven architecture).
-* **Vector DB:** Pinecone.
-* **Embeddings:** Cohere Multilingual v3.0.
-* **UI:** Gradio.
+🛠 טכנולוגיות ה-AI
+LLM: Google Gemini 2.5 Flash (עבודה במצב REST לעקיפת חסימות SSL).
 
----
+Orchestration: LlamaIndex Workflows (Event-Driven architecture).
 
-## 🚀 הוראות הרצה
+Vector DB: Pinecone.
 
-### 1. התקנת סביבה
+Embeddings: Cohere Multilingual v3.0.
+
+UI: Gradio.
+
+🚀 הוראות הרצה
+1. התקנת סביבה
 יש להתקין את הספריות הנדרשות:
-```bash
-pip install llama-index llama-index-llms-gemini llama-index-embeddings-cohere pinecone-client gradio python-dotenv urllib3
+
+Bash
+pip install llama-index llama-index-llms-gemini llama-index-embeddings-cohere pinecone-client 
 
 
 
+
+gradio python-dotenv urllib3
 2. הגדרת משתני סביבה
 יש ליצור קובץ .env (ניתן להיעזר ב-.env.example) ולהזין את המפתחות הבאים:
 
